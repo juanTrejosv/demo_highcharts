@@ -1,0 +1,90 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+              <span data-feather="home" aria-hidden="true"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/map']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+              <span data-feather="bar-chart-2" aria-hidden="true"></span>
+              Gráfico de Mapa
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component3']">
+              <span data-feather="bar-chart" aria-hidden="true"></span>
+              Gráfico de Líneas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component4']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Gráfico de Área
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component5']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Gráfico de Columnas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component6']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Gráfico de Barras
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component7']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Mapa de Árbol
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component8']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Gráfico de Torta
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component9']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Gráfico de Polar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component10']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Gráfico de Tiempo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component11']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Tarjetas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/component12']">
+              <span data-feather="pie-chart" aria-hidden="true"></span>
+              Tabla de Datos
+            </a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 border border-dark">
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </div>
+</div>

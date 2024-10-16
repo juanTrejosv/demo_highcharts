@@ -1,0 +1,64 @@
+body {
+  font-size: 0.875rem;
+}
+
+.position-sticky {
+  overflow: auto;
+  height: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  margin: 2px 10px;
+  display: block;               /* Asegura que ocupe todo el ancho */
+  font-weight: 500;
+  color: #fff;                  /* Cambia el color de texto a blanco */
+  background-color: #007bff;    /* Color de fondo para simular botón */
+  padding: 10px 15px;           /* Añade espaciado interno para parecer un botón */
+  border-radius: 5px;           /* Bordes redondeados */
+  text-align: center;           /* Alinea el texto al centro */
+  margin-bottom: 10px;          /* Separación entre los botones */
+  text-decoration: none;        /* Elimina el subrayado */
+  transition: background-color 0.3s ease; /* Suaviza la transición al hacer hover */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #0056b3;    /* Color más oscuro al pasar el mouse */
+}
+
+.sidebar .nav-link.active {
+  background-color: #0056b3;    /* Botón activo con un color distinto */
+  color: #fff;                  /* Asegúrate de que el texto del botón activo sea visible */
+}
+
+.sidebar .nav-link:focus {
+  outline: none;                /* Elimina el borde de enfoque */
+  box-shadow: 0 0 0 2px rgba(0,123,255,.25); /* Sombra suave en foco */
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.active {
+  font-weight: bold;
+  color: blue; /* Cambia el color según tu preferencia */
+}
